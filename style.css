@@ -1,0 +1,137 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.line {
+    height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    background: #1a1a1a;
+    color: #fff;
+    min-height: 100%;
+    
+}
+.t01:hover{
+    background-color: #fff;
+    padding: 1px;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #1a1a1a;
+}
+label{
+    font-weight: normal;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 30px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+.col-sm-1{width: 70px;}
+.col-sm-3{
+    width: 310px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.col-sm-3:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
+}
+.styleimg{
+    height: 150px;
+    width: 280px;
+    border-radius: 20px;
+
+}
+
+ul ul a {
+    font-size: 0.9em;
+    padding-left: 30px;
+    background: #1a1a1a;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
